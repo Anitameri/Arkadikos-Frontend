@@ -3,3 +3,21 @@
     float: right!important;
  
 }
+
+.ham1{
+    position: absolute;
+    left:20rem;
+}
+.ham2{
+    position: absolute;
+    right:20rem;
+}
+.col-md-5 {
+    flex: 0 0 auto;
+    margin: auto!important;
+}
+.form-control {
+   
+    background-color: transparent!important;
+  
+}

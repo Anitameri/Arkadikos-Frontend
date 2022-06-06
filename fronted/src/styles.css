@@ -1,2 +1,23 @@
-
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@font-face {
+    font-family: ARCADECLASSIC;
+    src: url(./assets/fonts/ARCADECLASSIC.TTF);
+}
+@font-face {
+    font-family: gomarice_game_music_love;
+    src: url(./assets/fonts/gomarice_game_music_love.TTF);
+}
+@font-face {
+    font-family: never;
+    src: url(./assets/fonts/never.TTF);
+}
+  
+h1 {
+    font-family: ARCADECLASSIC;
+    color: darkgreen;
+}
+header{
+    height:230px;
+    background-image:url("/assets/images/bg-header.png");
+}
     

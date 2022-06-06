@@ -1,15 +1,9 @@
-header{
-    height:230px;
-    background-color: rgb(131 131 131);
-}
+
 header img{
-    width: 12%;
+    width: 9%;
     float: left;
     margin: 1rem;
-    margin-top: -0.12rem;    width: 12%;
-    float: left;
-    margin: 1rem;
-    margin-top: -0.12rem;
+    margin-top: 0.879999999999999rem;
 }
 header h1 {
     text-align: center;
