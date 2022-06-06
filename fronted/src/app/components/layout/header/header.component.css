@@ -1,4 +1,7 @@
-
+header{
+    height:auto;
+    background-image:url("/assets/images/bg-header.png"); 
+}
 header img{
     width: 9%;
     float: left;
