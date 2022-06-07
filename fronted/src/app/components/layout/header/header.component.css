@@ -1,12 +1,16 @@
 header{
     height:auto;
     background-image:url("/assets/images/bg-header.png"); 
+    background-position: center;
 }
 header img{
-    width: 9%;
-    float: left;
     margin: 1rem;
-    margin-top: 0.879999999999999rem;
+    margin-top: -0.120000000000001rem;
+    position: absolute;
+    left: 27px;
+    width: 11rem;
+    height: 12rem;
+    z-index: 1;
 }
 header h1 {
     text-align: center;
