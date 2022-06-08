@@ -92,11 +92,18 @@
               "src/favicon.ico",
               "src/assets"
             ],
+<<<<<<< HEAD
             "styles": [
     "src/styles.css"
     
  ]
  
+=======
+          "styles": [
+            "src/styles.css"
+   
+           ]
+>>>>>>> f343702445c94d94cbc41593d540959a56a8dbba
 
           }
         }
