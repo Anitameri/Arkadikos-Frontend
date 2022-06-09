@@ -1,5 +1,4 @@
 footer{
-    height: 289px;
     background-color: black;
     text-align: center;
 }
@@ -16,10 +15,14 @@ footer{
     font-size: 18px;
     
 }
-button{
+.center-buttons{
     background-color: black;
     width: 60px;
     height: 60px;
+}
+.right-buttons{
+    background-color: black;
+
 }
 
 
