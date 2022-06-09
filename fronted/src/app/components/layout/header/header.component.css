@@ -1,5 +1,5 @@
 header{
-    height:auto;
+    height: 255px;
     background-image:url("/assets/images/bg-header.png"); 
     background-position: center;
 }
@@ -7,11 +7,17 @@ header img{
     margin: 1rem;
     margin-top: -0.120000000000001rem;
     position: absolute;
-    left: 27px;
-    width: 11rem;
-    height: 12rem;
+    left: 90px;
+    width: 129px;
+    height: 222px;
     z-index: 1;
+    top: 19px;
 }
 header h1 {
     text-align: center;
+   
+
+}
+.letter-header{
+     margin-top: 2rem;
 }

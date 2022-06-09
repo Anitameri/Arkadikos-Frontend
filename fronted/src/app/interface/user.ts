@@ -1,6 +1,7 @@
 export class User {
-    id: string | undefined;
+    id: number | undefined;
+    isAdmin: boolean | undefined;
     name: string | undefined;
     email: string | undefined;
-    password:String | undefined
+    password:String | undefined;
 }

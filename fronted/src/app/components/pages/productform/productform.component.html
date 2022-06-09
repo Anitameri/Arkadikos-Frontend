@@ -1,20 +1,55 @@
+<div class="product-form col-5">
 <form>
     <div class="mb-3">
-      <label for="title" class="form-label">Title</label>
-      <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+      <label for="name" class="form-label">nombre</label>
+      <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text">El mejor sitio para vender tu retro-game.</div>
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Description</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="description" class="form-label">Description</label>
+      <textarea type="text" class="form-control" id="description"></textarea>
     </div>
     <div class="mb-3">
-      <label for="image" class="form-label">Image</label>
+      <label for="price" class="form-label">Precio</label>
+      <input type="number" class="form-control" id="price" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="category" class="form-label">Categoria</label>
+      <input type="text" class="form-control" id="category">
+    </div>
+    <div class="mb-3">
+      <label for="units" class="form-label">Unidades</label>
+      <input type="number" class="form-control" id="units">
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Imagen</label>
       <input type="file" class="form-control" id="image">
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
+    
     <button type="submit" class="btn btn-primary"><i class="bi bi-cart"></i>Comprar</button>
   </form>
+</div>
+
+<!--   <form>
+    <div class="form-group">
+        <input type="file" (change)="onImageUpload($event)">
+        <input type="button" (click)="imageUploadAction()" value="Upload Image" class="btn1">
+    </div>
+
+
+    <div>
+        <output *ngIf=successResponse class="success"><b>{{successResponse}}</b></output>
+    </div>
+    <br>
+
+    <div class="form-group">
+        <input type="text" id="image" placeholder="Search Image" [(ngModel)]="image" name="image" />
+        <input type="button" (click)="viewImage()" value="View Image" class="btn1">
+
+    </div>
+
+    <div *ngIf=dbImage>
+        <img [src]="dbImage">
+    </div>
+
+</form> -->
