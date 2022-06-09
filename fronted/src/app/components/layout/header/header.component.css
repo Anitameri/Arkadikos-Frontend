@@ -2,10 +2,11 @@ header{
     height: 255px;
     background-image:url("/assets/images/bg-header.png"); 
     background-position: center;
+    background-size: cover;
 }
 header img{
-    margin: 1rem;
-    margin-top: -0.120000000000001rem;
+ /*   margin: 1rem;
+    margin-top: -0.120000000000001rem;*/
     position: absolute;
     left: 90px;
     width: 129px;
@@ -18,6 +19,6 @@ header h1 {
    
 
 }
-.letter-header{
+/*.letter-header{
      margin-top: 2rem;
-}
+}*/

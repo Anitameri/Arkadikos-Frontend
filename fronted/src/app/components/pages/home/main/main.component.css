@@ -1,6 +1,6 @@
 main{
     height:550px;
-    background-color:rgb(251,203,10);
+    background-color: rgba(251, 203, 10, 0.66);
 } 
 /* .grid-system-responsive{
     display: grid;
