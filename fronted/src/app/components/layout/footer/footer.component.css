@@ -1,5 +1,28 @@
 footer{
-    height:300px;
     background-color: black;
     text-align: center;
 }
+.left-text{
+    color: rgba(251, 203, 10, 0.66); 
+    font-size: 18px;
+}
+.right-text{
+    color: rgba(251, 203, 10, 0.66); 
+    font-size: 18px;
+}
+.center-text{
+    color: rgba(251, 203, 10, 0.66); 
+    font-size: 18px;
+    
+}
+.center-buttons{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+.right-buttons{
+    background-color: black;
+
+}
+
+

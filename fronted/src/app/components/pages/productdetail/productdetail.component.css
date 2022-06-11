@@ -10,33 +10,52 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 458px;
-    min-width: 230px;
+    /*max-width: 458px;
+    min-width: 230px;*/
+    width: 407px;
+    height: 674px;
     word-wrap: break-word;
     background-color: #fff;
     background-position: bottom;
     background-clip: border-box;
     border: 1pxsolidrgba(0,0,0,.125);
-    border-radius: 0.25rem;
+    border-radius: 0.9rem;
     float: left;
-    height: 21rem;
+
+    /*height: 21rem;*/
 }
 .card-img-top {
     
     width: 100%;
-    height: 11rem!important;
-    border-radius: 0.9rem;
-    border: 8px inset rgb(244 3 244);
-    box-shadow: 0px 5px 5px 13px rgb(199 10 126 / 59%);
+    height: 407px;
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    /*height: 11rem!important;*/
+    /*border-radius: 0.9rem;*/
+    /*border: 8px inset rgb(244 3 244);
+    box-shadow: 0px 5px 5px 13px rgb(199 10 126 / 59%);*/
 }
 
 
 .card-body{
-    border: 3px solid rgba(96, 96, 96, 0.416);
-    border-radius: 0.7rem;
-    box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+   /* border: 3px solid rgba(96, 96, 96, 0.416);*/
+    /*border-radius: 0.9rem;*/
+    /*box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
             1px 2px 4px 0px rgba(0,255,255,0.7),
             2px 4px 8px 0px rgba(0,255,255,0.7),
-            2px 4px 16px 0px rgba(0,255,255,0.7);
-         
+            2px 4px 16px 0px rgba(0,255,255,0.7);*/
+    max-height: 267px;
+}
+.card-title{
+    font-size: 30px;
+    
+    
+}
+.card-text{
+    font-size: 25px;
+}
+.card-price{
+    font-size: 30px;
+    
+    
 }
