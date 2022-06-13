@@ -39,7 +39,7 @@ import { FormPlusImageComponent } from './components/pages/form-plus-image/form-
     
   ],
   imports: [
-    BrowserModule,
+     BrowserModule,
      AppRoutingModule,
      FormsModule,
      ReactiveFormsModule,
