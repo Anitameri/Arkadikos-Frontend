@@ -1,10 +1,10 @@
 .col-5 {
-    flex: auto;
-    width: 41.66666667%;
+    display: block;
+    width: 34.666667%;
     padding: 2rem;
-    float: right;
-    position: relative;
-    right: 5rem;
+  position: absolute;
+    right: 18rem;
+    top: 0px;
 }
 .reset{
     color:#C70A80!important;
@@ -19,10 +19,11 @@
     height: 70vh;
 }
 .col-4 {
-    flex: 0 0 auto;
+    display: block;
     width: 33.33333333%;
     padding: 2rem;
-    float: left;
+    /* float: left; */
     position: relative;
-    left: 5rem;
+    left: 14rem;
+    height: auto;
 }
