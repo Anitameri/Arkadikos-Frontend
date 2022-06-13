@@ -1,6 +1,6 @@
 .grid-system-responsive {
     display: grid;
-    grid-template-columns: repeat(3, minmax(383px, 1fr));
+    grid-template-columns: repeat(3, minmax(464px, 1fr));
     grid-gap: 1rem;
     justify-items: center;
     margin-top: 1rem;
@@ -10,15 +10,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    /*max-width: 458px;
-    min-width: 230px;*/
-    width: 407px;
+    width: 466px;
     height: 674px;
     word-wrap: break-word;
     background-color: #fff;
     background-position: bottom;
     background-clip: border-box;
-    border: 1pxsolidrgba(0,0,0,.125);
+    border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.9rem;
     float: left;
 

@@ -1,6 +1,7 @@
 footer{
     background-color: black;
     text-align: center;
+    position: relative;
 }
 .left-text{
     color: rgba(251, 203, 10, 0.66); 
