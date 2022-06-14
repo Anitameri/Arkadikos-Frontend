@@ -1,11 +1,11 @@
-<ngb-carousel>
-    <ng-template *ngFor="let pelicula of peliculas" ngbSlide>
+<ngb-carousel *ngIf="products">
+ 
+ <ng-template ngbSlide *ngFor= "let product of products">
       <div class="picsum-img-wrapper">
-        <img src="{{pelicula.img}}" alt="Random first slide">
+        <img src={{product.image}} alt="Random first slide">
       </div>
       <div class="carousel-caption">
-        <h3>{{pelicula.name}}</h3>
-        <p>{{pelicula.desc}}</p>
+        <h3>{{product.name}}</h3>
       </div>
     </ng-template>
 </ngb-carousel>
