@@ -1,4 +1,4 @@
-<div class="register-form col-12">
+<div class="register-form col-11" style="margin: auto;">
 <div class="register-form col-4">
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group">
@@ -143,11 +143,11 @@
      
   
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn reg">Login</button>
         <button
           type="button"
           (click)="onReset()"
-          class="btn btn-warning float-right"
+          class="btn btn-warning float-right reset"
         >
           Reset
         </button>
