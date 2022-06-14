@@ -1,6 +1,6 @@
-<ngb-carousel *ngIf="products">
+<ngb-carousel *ngIf="products"  (slide)="onSlide($event)">
  
- <ng-template ngbSlide *ngFor= "let product of products">
+ <ng-template *ngFor= "let product of products; let i = index" ngbSlide [id]="'slideId_' + i">
       <div class="picsum-img-wrapper">
         <img src={{product.image}} alt="Random first slide">
       </div>
@@ -9,4 +9,9 @@
       </div>
     </ng-template>
 </ngb-carousel>
+<!-- <ngb-carousel *ngIf="images" (slide)="onSlide($event)">
+	<ng-template *ngFor="let image of images; let i = index" ngbSlide [id]="'slideId_' + i">
+		<img [src]="image" alt="Random slide">
+  </ng-template>
+</ngb-carousel> -->
 

@@ -10,7 +10,9 @@ import { Product } from '../../../interface/product';
 })
 export class SliderBComponent implements OnInit {
 
-  products?:Product[]=[]; 
+  products:Product[]=[];
+ dataEvent: string | undefined;
+ 
   
   constructor(private config:NgbCarouselConfig, private productService: ProductService ) {
     config.interval = 3000;
@@ -20,6 +22,21 @@ export class SliderBComponent implements OnInit {
    }
    ngOnInit(){
     this.productService.getProductsList().subscribe((products)=>(this.products=products));
-    console.log(this.products);
+  
   }
+  onSlide(event:any) {
+    this.dataEvent = JSON.stringify(event);
+    console.log(event);
+    const imageIndex = parseInt(event.current.replace("slideId_", ""), 10);
+    console.log("image index", imageIndex);
+  }
+  /* dataEvent: string;
+
+  onSlide(event) {
+    this.dataEvent = JSON.stringify(event);
+    console.log(event);
+    const imageIndex = parseInt(event.current.replace("slideId_", ""), 10);
+    console.log("image index", imageIndex);
+  } */
+
 }

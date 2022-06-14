@@ -16,5 +16,6 @@ export class ProductdetailComponent implements OnInit {
     this.productService.getProductsList().subscribe((products)=>(this.products=products));
     console.log(this.products);
   }
+  
 
 }

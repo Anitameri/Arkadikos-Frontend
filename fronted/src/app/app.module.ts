@@ -49,7 +49,7 @@ import { LoginRegComponent } from './components/pages/login-reg/login-reg.compon
      HttpClientJsonpModule,
      NgbModule
   ],
-  providers: [],
+  providers: [ NgbModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
