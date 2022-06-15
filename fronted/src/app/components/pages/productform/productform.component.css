@@ -5,3 +5,11 @@
     margin-top: 1rem;
     padding: 2rem;
 }
+
+.btn-warning {
+    background-color: #C70A80 !important;
+}
+
+.btn-secondary {
+    background-color: #37E2D5 !important;
+    padding: 40px;}
