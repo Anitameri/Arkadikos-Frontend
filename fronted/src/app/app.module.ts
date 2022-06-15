@@ -51,7 +51,7 @@ import { ProductComponent } from './components/pages/product/product.component';
      HttpClientJsonpModule,
      NgbModule
   ],
-  providers: [],
+  providers: [ NgbModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

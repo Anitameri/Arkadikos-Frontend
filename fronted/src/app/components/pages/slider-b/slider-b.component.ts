@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import{ProductService} from '../../../services/product.service';
+import { Product } from '../../../interface/product';
 
 @Component({
   selector: 'app-slider-b',
@@ -7,24 +9,36 @@ import { NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./slider-b.component.css']
 })
 export class SliderBComponent implements OnInit {
-  peliculas:any[]=[
-    {name:'Merchan1',
-    img:'assets/images/gameboy.jpg',
-    desc:'Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery of their kingdom.'},
-    {
-      name:'Merchan2',
-      img:'assets/images/f95zone-gaming-community.png',
-      desc:'Pennsylvania, 1956. Frank Sheeran, a war veteran of Irish origin who works as a truck driver, accidentally meets mobster Russell Bufalino. Once Frank becomes his trusted man, Bufalino sends him to Chicago with the task of helping Jimmy Hoffa, a powerful union leader related to organized crime, with whom Frank will maintain a close friendship for nearly twenty years.'
-    }
-  ];
 
-  constructor(private _config:NgbCarouselConfig) {
-    _config.interval = 3000;
-    _config.pauseOnHover = true;
-    _config.showNavigationArrows = false;
+  products:Product[]=[];
+ dataEvent: string | undefined;
+ 
+  
+  constructor(private config:NgbCarouselConfig, private productService: ProductService ) {
+  
+    config.pauseOnHover=false;
+    config.interval = 3000;
+    config.wrap = true;
+    config.keyboard = true;
+    config.pauseOnHover = false;
+   }
+   ngOnInit(){
+    this.productService.getProductsList().subscribe((products)=>(this.products=products));
+  
   }
+   onSlide(event:any) {
+    this.dataEvent = JSON.stringify(event);
+    console.log(event);
+    const imageIndex = parseInt(event.current.replace("slideId_", ""), 10);
+    console.log("image index", imageIndex);
+  }
+  /* dataEvent: string;
 
-  ngOnInit() {
-  }
+  onSlide(event) {
+    this.dataEvent = JSON.stringify(event);
+    console.log(event);
+    const imageIndex = parseInt(event.current.replace("slideId_", ""), 10);
+    console.log("image index", imageIndex);
+  } */
 
 }
