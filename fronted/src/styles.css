@@ -1,7 +1,43 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap/css/bootstrap";
 =======
+=======
+@font-face {
+    font-family: ARCADECLASSIC;
+    src: url(./assets/fonts/ARCADECLASSIC.TTF);
+}
+@font-face {
+    font-family: gomarice_game_music_love;
+    src: url(./assets/fonts/gomarice_game_music_love.TTF);
+}
+@font-face {
+    font-family: never;
+    src: url(./assets/fonts/never.TTF);
+}
+@font-face {
+    font-family:PlayMeGames-Demo;
+    src: url(./assets/fonts/PlayMeGames-Demo.otf);
+}
+  
+h1 {
+    font-family: ARCADECLASSIC;
+    color: #590696;
+
+}
+p,h4, h5, h6 {
+    font-family:  never;
+    color: rgb(28, 28, 28);
+}
+body{
+    background-color: rgba(251, 203, 10, 0.66);
+}
+a{
+    font-family:PlayMeGames-Demo;
+   
+}
+>>>>>>> 9df735a3bb81cc78aef17310e0c9755669359a38
 
     
 >>>>>>> f343702445c94d94cbc41593d540959a56a8dbba
