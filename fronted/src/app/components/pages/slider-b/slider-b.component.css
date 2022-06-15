@@ -1,0 +1,9 @@
+.ngbCarousel{
+    height:487px;
+    width: 100%;
+    overflow: hidden;
+}
+.picsum-img-wrapper {
+ max-width: 1000px;
+ margin: auto;
+}

@@ -15,8 +15,10 @@ export class SliderBComponent implements OnInit {
  
   
   constructor(private config:NgbCarouselConfig, private productService: ProductService ) {
+  
+    config.pauseOnHover=false;
     config.interval = 3000;
-    config.wrap = false;
+    config.wrap = true;
     config.keyboard = true;
     config.pauseOnHover = false;
    }
@@ -24,7 +26,7 @@ export class SliderBComponent implements OnInit {
     this.productService.getProductsList().subscribe((products)=>(this.products=products));
   
   }
-  onSlide(event:any) {
+   onSlide(event:any) {
     this.dataEvent = JSON.stringify(event);
     console.log(event);
     const imageIndex = parseInt(event.current.replace("slideId_", ""), 10);

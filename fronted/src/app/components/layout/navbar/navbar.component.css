@@ -1,12 +1,21 @@
 .navbar {
    
     float:none!important;
-    position: relative;
+    position: absolute;
     display: flex!important;
     flex-basis: auto;
     text-align: right;
     flex-direction: row-reverse;
+    top: 12rem;
+    right: 13rem;
  
+}
+
+.nav-item{
+    margin-right: 1rem;
+}
+.navbar-brand {
+   margin-left: 1rem;
 }
 .navbar-collapse {
     display: flex!important;
@@ -35,6 +44,6 @@
 }
 .nav-link{
     font-size: 1rem;
-    color:#590696;
-    font-family:PlayMeGames-Demo;
+    color:#ffffff;
+    font-family:gomarice_game_music_love;
 }

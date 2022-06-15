@@ -41,6 +41,9 @@ header h1 {
 }
 .input-group{
     text-align: center;
+    position: absolute;
+    right: 2rem;
+    top:14rem;
 }
 .form-outline{
     margin: auto;

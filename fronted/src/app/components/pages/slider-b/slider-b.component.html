@@ -1,4 +1,4 @@
-<ngb-carousel *ngIf="products"  (slide)="onSlide($event)">
+<ngb-carousel class="ngbCarousel" *ngIf="products"  (slide)="onSlide($event)">
  
  <ng-template *ngFor= "let product of products; let i = index" ngbSlide [id]="'slideId_' + i">
       <div class="picsum-img-wrapper">

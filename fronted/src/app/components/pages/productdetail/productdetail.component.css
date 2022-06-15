@@ -1,6 +1,6 @@
 .grid-system-responsive {
     display: grid;
-    grid-template-columns: repeat(3, minmax(464px, 1fr));
+    grid-template-columns: repeat(3, minmax(321px, 1fr));
     grid-gap: 1rem;
     justify-items: center;
     margin-top: 1rem;
