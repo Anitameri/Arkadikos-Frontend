@@ -1,17 +1,19 @@
 .grid-system-responsive {
+
     display: grid;
-    grid-template-columns: repeat(3, minmax(464px, 1fr));
+    grid-template-columns: repeat(4, minmax(364px, 1fr));
     grid-gap: 1rem;
     justify-items: center;
     margin-top: 1rem;
     padding: 1rem;
+    justify-content: space-around;
 }
 .card {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 466px;
-    height: 674px;
+    width: 366px;
+    height: 580px;
     word-wrap: break-word;
     background-color: #fff;
     background-position: bottom;
@@ -23,9 +25,9 @@
     /*height: 21rem;*/
 }
 .card-img-top {
-    
+
     width: 100%;
-    height: 407px;
+    height: 350px;
     border-top-left-radius: 0.9rem;
     border-top-right-radius: 0.9rem;
     /*height: 11rem!important;*/
@@ -46,14 +48,14 @@
 }
 .card-title{
     font-size: 30px;
-    
-    
+
+
 }
 .card-text{
     font-size: 25px;
 }
 .card-price{
     font-size: 30px;
-    
-    
+
+
 }
