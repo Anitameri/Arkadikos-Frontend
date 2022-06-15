@@ -1,0 +1,28 @@
+
+<div class="container">
+    <h1>TechGeekNext Upload Image Example</h1>
+    <br>
+    <form>
+        <div class="form-group">
+            <input type="file" (change)="onImageUpload($event)">
+            <input type="button" (click)="imageUploadAction()" value="Upload Image" class="btn1">
+        </div>
+
+
+        <div>
+            <output *ngIf=successResponse class="success"><b>{{successResponse}}</b></output>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <input type="text" id="image" placeholder="Search Image" [(ngModel)]="image" name="image" />
+            <input type="button" (click)="viewImage()" value="View Image" class="btn1">
+
+        </div>
+
+        <div *ngIf=dbImage>
+            <img [src]="dbImage">
+        </div>
+
+    </form>
+</div>

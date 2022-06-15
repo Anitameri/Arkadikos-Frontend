@@ -1,5 +1,40 @@
 .navbar {
    
-    float: right!important;
+    float:none!important;
+    position: relative;
+    display: flex!important;
+    flex-basis: auto;
+    text-align: right;
+    flex-direction: row-reverse;
  
+}
+.navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    flex-direction: row-reverse;
+}
+
+.ham1{
+    position: absolute;
+    left:20rem;
+}
+.ham2{
+    position: absolute;
+    right:20rem;
+}
+.col-md-5 {
+    flex: 0 0 auto;
+    margin: auto!important;
+
+}
+.form-control {
+   
+    background-color: transparent!important;
+    text-align: center;
+  
+}
+.nav-link{
+    font-size: 1rem;
+    color:#590696;
+    font-family:PlayMeGames-Demo;
 }

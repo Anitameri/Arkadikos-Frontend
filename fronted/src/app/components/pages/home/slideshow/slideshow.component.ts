@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
+
 @Component({
   selector: 'app-slideshow',
   templateUrl: './slideshow.component.html',
@@ -7,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideshowComponent implements OnInit {
 
-  constructor() { }
+
+  constructor() {}
 
   ngOnInit(): void {
   }

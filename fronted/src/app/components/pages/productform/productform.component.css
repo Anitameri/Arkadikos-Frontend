@@ -1,0 +1,7 @@
+.col-5 {
+    flex: auto;
+    width: 41.66666667%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 2rem;
+}

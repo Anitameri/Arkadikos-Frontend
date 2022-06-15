@@ -1,0 +1,28 @@
+.col-5 {
+    flex: auto;
+    width: 41.66666667%;
+    padding: 2rem;
+    float: right;
+    position: relative;
+    right: 5rem;
+}
+.reset{
+    color:#C70A80!important;
+   
+}
+.reg{
+   color: #37E2D5!important;  
+}
+
+.composit
+ {
+    height: 70vh;
+}
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    padding: 2rem;
+    float: left;
+    position: relative;
+    left: 5rem;
+}
