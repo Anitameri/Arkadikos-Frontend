@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'; 
 
@@ -15,7 +16,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ProductlistComponent } from './components/pages/home/productlist/productlist.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductformComponent } from './components/pages/productform/productform.component';
 import { ProductdetailComponent } from './components/pages/productdetail/productdetail.component';
 import { LoginregisterComponent } from './components/pages/loginregister/loginregister.component';
@@ -39,6 +39,7 @@ import { FormPlusImageComponent } from './components/pages/form-plus-image/form-
     
   ],
   imports: [
+
      BrowserModule,
      AppRoutingModule,
      FormsModule,
