@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* You can add global styles to this file, and also import other style files */
-@import "bootstrap/css/bootstrap";
-=======
-=======
+
 @font-face {
     font-family: ARCADECLASSIC;
     src: url(./assets/fonts/ARCADECLASSIC.TTF);
@@ -20,7 +16,7 @@
     font-family:PlayMeGames-Demo;
     src: url(./assets/fonts/PlayMeGames-Demo.otf);
 }
-  
+
 h1 {
     font-family: ARCADECLASSIC;
     color: #590696;
@@ -35,9 +31,6 @@ body{
 }
 a{
     font-family:PlayMeGames-Demo;
-   
-}
->>>>>>> 9df735a3bb81cc78aef17310e0c9755669359a38
 
-    
->>>>>>> f343702445c94d94cbc41593d540959a56a8dbba
+}
+
