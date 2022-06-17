@@ -1,9 +1,23 @@
 .ngbCarousel{
-    height:487px;
+    width:100%;
+    max-height: 415px !important;
+    margin-top: 30px;
+    padding-left: 122px;
+    padding-right: 122px;
+}
+.tales {
     width: 100%;
-    overflow: hidden;
-}
-.picsum-img-wrapper {
- max-width: 1000px;
- margin: auto;
-}
+    height: 415px;
+    border-radius: 15px;
+
+  }
+
+h5 {
+    color: rgb(51, 14, 187);
+    font-size: 40px;
+  }
+  .descripcionslider{
+    color: rgb(51, 14, 187);
+    font-size: 30px;
+  }
+

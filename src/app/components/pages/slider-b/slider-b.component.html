@@ -2,10 +2,11 @@
  
  <ng-template *ngFor= "let product of products; let i = index" ngbSlide [id]="'slideId_' + i">
       <div class="picsum-img-wrapper">
-        <img src={{product.image}} alt="Random first slide">
+        <img class="tales" src={{product.image}} alt="Random first slide">
       </div>
       <div class="carousel-caption">
-        <h3>{{product.name}}</h3>
+        <h5>{{product.name}}</h5>
+        <p class="descripcionslider">{{product.description}}</p>
       </div>
     </ng-template>
 </ngb-carousel>

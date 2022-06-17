@@ -23,11 +23,7 @@ import { CheckoutComponent } from './components/pages/checkout/checkout.componen
 
 import { FormPlusImageComponent } from './components/pages/form-plus-image/form-plus-image.component';
 import { LoginRegComponent } from './components/pages/login-reg/login-reg.component';
-<<<<<<< HEAD:src/app/app.module.ts
 import { SliderBComponent } from './components/pages/slider-b/slider-b.component';
-=======
-import { ProductComponent } from './components/pages/product/product.component';
->>>>>>> 61b720384dec38ff384e662cbdbc0d5cdd1a8f4d:fronted/src/app/app.module.ts
 
 @NgModule({
   declarations: [
@@ -42,15 +38,9 @@ import { ProductComponent } from './components/pages/product/product.component';
     ProductformComponent,
     ProductdetailComponent,
     CheckoutComponent,
-<<<<<<< HEAD:src/app/app.module.ts
     HeaderComponent,
     FooterComponent
   ],
-=======
-    ProductComponent,
-
- ],
->>>>>>> 61b720384dec38ff384e662cbdbc0d5cdd1a8f4d:fronted/src/app/app.module.ts
   imports: [
      BrowserModule,
      AppRoutingModule,
