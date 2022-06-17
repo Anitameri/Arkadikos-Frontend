@@ -21,3 +21,10 @@ h5 {
     font-size: 30px;
   }
 
+.carousel-control-prev-icon {
+ width: 3rem !important;
+ height: 3rem !important;
+ background-color: rgba(229, 69, 160, 0.882)!important;
+border-radius: 0.5rem! important;
+}
+

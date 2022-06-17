@@ -8,11 +8,14 @@
     top: 40%;
 }
 .searchbar{
-    margin-left: 15%;
+    margin-left: 18%;
     width: 60%;
+    margin-top: 2rem;
 }
+
 .iconosjuntos{
-    margin: auto;
+    margin-top: -3%;
+    margin-left: -3%;
 }
 
 

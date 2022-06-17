@@ -16,11 +16,11 @@ export class SliderBComponent implements OnInit {
   
   constructor(private config:NgbCarouselConfig, private productService: ProductService ) {
   
-    config.pauseOnHover=false;
+    config.pauseOnHover=true;
     config.interval = 3000;
     config.wrap = true;
     config.keyboard = true;
-    config.pauseOnHover = false;
+   
    }
    ngOnInit(){
     this.productService.getProductsList().subscribe((products)=>(this.products=products));
