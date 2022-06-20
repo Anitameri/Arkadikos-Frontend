@@ -3,7 +3,7 @@
     
     <form class="searchbar">
       <div class="input-group mb-4 border rounded-pill p-1 searchbar">
-        <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon3" class="form-control bg-none border-0">
+        <input type="search" placeholder="Encuentra tu producto" aria-describedby="button-addon3" class="form-control bg-none border-0">
         <div class="input-group-append border-0">
           <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search lupa"></i></button>
         </div>
@@ -16,8 +16,8 @@
       <li class="nav-item active">
         <a class="nav-link registro fa-2xl" routerLink="/login-register"><i class="fa-solid fa-right-to-bracket"></i><span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item crear">
-        <a class="nav-link" routerLink="/create">Crear Producto</a>
+      <li class="nav-item">
+        <a class="nav-link crear" routerLink="/create">Crear Producto</a>
       </li>
     </ul>
   </div>
@@ -41,6 +41,11 @@
         <a class="nav-link" routerLink="/create">Crear Producto</a>
       </li>
       </ul>
+     
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="/product/:productId">Product</a>
+      </li>
+    </ul>
   </div>
 </nav> -->
 

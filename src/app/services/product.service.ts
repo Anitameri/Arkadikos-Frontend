@@ -9,6 +9,9 @@ import { Product } from '../interface/product';
 export class ProductService {
 
   private baseURL = "http://localhost:8080/api/products";
+  
+  products:Product[]=[];
+
 
   constructor(private httpClient: HttpClient) { }
   
