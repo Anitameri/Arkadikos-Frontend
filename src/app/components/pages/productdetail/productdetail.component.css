@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
 .grid-system-responsive {
 
     display: grid;
@@ -27,7 +29,8 @@
 .card-img-top {
 
     width: 100%;
-    height: 290px;
+    height: 270px;
+    min-height: 270px;
     border-top-left-radius: 0.9rem;
     border-top-right-radius: 0.9rem;
     /*height: 11rem!important;*/
@@ -53,9 +56,45 @@
 }
 .card-text{
     font-size: 1rem;
+    max-height: 24px;
 }
 .card-price{
     font-size: 1.5rem;
 
 
 }
+.btn {
+	background: #C70A80;
+	border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+	border-left: 6px inset rgba(0, 0, 0, 0.5);
+	border-right: 6px inset rgba(255, 255, 255, 0.5);
+	border-top: 6px inset rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	
+	min-width: 200px;
+
+	text-transform: uppercase;
+	width: auto;
+
+}
+.btn:focus{
+    background: #a1196d;
+}
+.btn:hover {
+    background: #a1196d;
+}
+
+
+/* .btn.primary {
+	background: #881400;}
+
+    .btn.primary:focus{
+		background: #a81000;
+	}
+    btn.primary:hover{
+        background: #a81000;
+    } */

@@ -17,4 +17,8 @@ export class ProductdetailComponent implements OnInit {
     console.log(this.products);
   }
 
+  addToCart(product:Product): void {
+    this.productService.products.push(product);
+    (document.getElementById("product"+product.id?.toString()) as HTMLElement).style.backgroundColor="green";
+  }
 }
