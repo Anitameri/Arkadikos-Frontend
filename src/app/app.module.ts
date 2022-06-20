@@ -22,8 +22,8 @@ import { ProductdetailComponent } from './components/pages/productdetail/product
 import { CheckoutComponent } from './components/pages/checkout/checkout.component';
 
 import { FormPlusImageComponent } from './components/pages/form-plus-image/form-plus-image.component';
-import { LoginRegComponent } from './components/pages/login-reg/login-reg.component';
 import { SliderBComponent } from './components/pages/slider-b/slider-b.component';
+import { LoginregisterComponent } from './components/pages/loginregister/loginregister.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { SliderBComponent } from './components/pages/slider-b/slider-b.component
     MainComponent,
     NavbarComponent,
     SliderBComponent,
-    LoginRegComponent,
+    LoginregisterComponent,
     SlideshowComponent,
     ProductlistComponent,
     FormPlusImageComponent,
