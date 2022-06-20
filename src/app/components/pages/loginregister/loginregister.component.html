@@ -1,13 +1,13 @@
 <div class="register-form col-11" style="margin: auto;">
 <div class="register-form col-4">
-  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <form [formGroup] = "form" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label>Full Name</label>
       <input
         type="text"
         formControlName="fullname"
         class="form-control"
-        [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors }"
+        [ngClass] = "{'is-invalid': submitted && f['fullname'].errors}"
       />
       <div *ngIf="submitted && f['fullname'].errors" class="invalid-feedback">
         <div *ngIf="f['fullname'].errors['required']">Fullname is required</div>
@@ -20,7 +20,7 @@
         type="text"
         formControlName="username"
         class="form-control"
-        [ngClass]="{ 'is-invalid': submitted && f['username'].errors }"
+        [ngClass] = "{'is-invalid': submitted && f['username'].errors}"
       />
       <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
         <div *ngIf="f['username'].errors['required']">Username is required</div>
@@ -39,7 +39,7 @@
         type="text"
         formControlName="email"
         class="form-control"
-        [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+        [ngClass] = "{ 'is-invalid': submitted && f['email'].errors }"
       />
       <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
         <div *ngIf="f['email'].errors['required']">Email is required</div>
@@ -53,7 +53,7 @@
         type="password"
         formControlName="password"
         class="form-control"
-        [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+        [ngClass] = "{ 'is-invalid': submitted && f['password'].errors }"
       />
       <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
         <div *ngIf="f['password'].errors['required']">Password is required</div>
