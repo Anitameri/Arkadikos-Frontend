@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: ARCADECLASSIC;
+  src: url(./assets/fonts/ARCADECLASSIC.TTF);
+}
+@font-face {
+  font-family: gomarice_game_music_love;
+  src: url(./assets/fonts/gomarice_game_music_love.TTF);
+}
+@font-face {
+  font-family: never;
+  src: url(./assets/fonts/never.TTF);
+}
+@font-face {
+  font-family:PlayMeGames-Demo;
+  src: url(./assets/fonts/PlayMeGames-Demo.otf);
+}
+
+h1 {
+  font-family: ARCADECLASSIC;
+  color: #590696;
+
+}
+p,h4, h6 {
+  font-family:  never;
+  color: rgb(28, 28, 28);
+}
+body{
+  background-color: rgba(251, 203, 10, 0.66);
+}
+a{
+  font-family:PlayMeGames-Demo;
+
+}
+.carousel-control-prev-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+  background-color: rgba(229, 69, 160, 0.882)!important;
+ border-radius: 0.5rem! important;
+ }
+ .carousel-control-next-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+  background-color: rgba(229, 69, 160, 0.882)!important;
+ border-radius: 0.5rem! important;
+ }

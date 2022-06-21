@@ -1,0 +1,68 @@
+.navbar {
+   
+/*      float:none!important;
+    position: relative;
+    display: flex!important;
+    flex-basis: auto;
+    text-align: center; */
+    top: 40%;
+}
+.searchbar{
+    margin-left: 18%;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.iconosjuntos{
+    margin-top: -3%;
+    margin-left: -3%;
+}
+
+
+.navbar-collapse {
+
+    justify-content: space-evenly
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #C70A80;
+    
+}
+ul {
+    display:flex;
+    list-style:none;
+    padding: 0px;
+    justify-content: space-between;
+  }
+  li{
+    padding:15px 15px;
+  }
+/* .barrabusqueda{
+    width: 30%;
+} */
+/*
+.ham1{
+    position: absolute;
+    left:20rem;
+}
+.ham2{
+    position: absolute;
+    right:20rem;
+}
+.col-md-5 {
+    flex: 0 0 auto;
+    margin: auto!important;
+
+}
+.form-control {
+   
+    background-color: transparent!important;
+    text-align: center;
+  
+}
+.nav-link{
+    font-size: 1rem;
+    color:#590696;
+    font-family:PlayMeGames-Demo;
+} */
