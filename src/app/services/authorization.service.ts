@@ -1,26 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-const AUTH_API = 'http://localhost:8080/api/auth/';
-const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-};
+import { logged_user } from 'app/interface/logged_user';
+import { login } from 'app/interface/login';
+import { User } from 'app/interface/user';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthorizationService{
+  public user_info:logged_user = new logged_user("", 0, new Array<String>(), "", "", "");
+  private AUTH_API = 'http://127.0.0.1:8080/api/users/';
+
   constructor(private http: HttpClient) { }
-  login(username: string, password: string): Observable<any> {
-    return this.http.post(AUTH_API + 'signin', {
-      username,
-      password
-    }, httpOptions);
+  login(login:login): Observable<Object> {
+    return this.http.post(`${this.AUTH_API}signin`, login);
   }
-  register(username: string, email: string, password: string): Observable<any> {
-    return this.http.post(AUTH_API + 'signup', {
-      username,
-      email,
-      password
-    }, httpOptions);
+  register(user:User): Observable<Object> {
+    return this.http.post(`${this.AUTH_API}create`, user);
   }
 }

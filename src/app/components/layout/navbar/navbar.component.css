@@ -1,19 +1,47 @@
 .navbar {
    
-    float:none!important;
+/*      float:none!important;
     position: relative;
     display: flex!important;
     flex-basis: auto;
-    text-align: right;
-    flex-direction: row-reverse;
- 
+    text-align: center; */
+    top: 40%;
 }
-.navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    flex-direction: row-reverse;
+.searchbar{
+    margin-left: 18%;
+    width: 60%;
+    margin-top: 2rem;
 }
 
+.iconosjuntos{
+    margin-top: -3%;
+    margin-left: -3%;
+}
+
+
+.navbar-collapse {
+
+    justify-content: space-evenly
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #C70A80;
+    
+}
+ul {
+    display:flex;
+    list-style:none;
+    padding: 0px;
+    justify-content: space-between;
+  }
+  li{
+    padding:15px 15px;
+  }
+/* .barrabusqueda{
+    width: 30%;
+} */
+/*
 .ham1{
     position: absolute;
     left:20rem;
@@ -37,4 +65,4 @@
     font-size: 1rem;
     color:#590696;
     font-family:PlayMeGames-Demo;
-}
+} */

@@ -1,9 +1,9 @@
 
-/* .grid-system-responsive{
+.grid-system-responsive{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10%;
     grid-row-gap: 11.1%;
     padding-bottom: 10%;
     background-color: rgb(213, 200, 26);
-} */
+} 
