@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { order } from 'app/interface/oder';
 import { Product } from 'app/interface/product';
 import { ProductService } from 'app/services/product.service';
 
@@ -8,6 +9,8 @@ import { ProductService } from 'app/services/product.service';
   styleUrls: ['./oneproduct.component.css']
 })
 export class OneproductComponent implements OnInit {
+
+  product:Product=new Product();
 
   products:Product[]=[
     {name: "Camiseta Arkadikos",
@@ -50,17 +53,18 @@ export class OneproductComponent implements OnInit {
     rating: 4,
     user_id: 1}
 
-
-
-
   ];
-
-  
-
-  constructor() { }
+  constructor(private productservice:ProductService) { }
 
   ngOnInit(): void {
+    this.product=this.productservice.oneProduct;
    
+  }
+  addToCart(product:Product): void {
+    if(product.id&&product.name&&product.price&&product.image&&product.units)
+    this.productservice.orders.push(new order(product.id, product.name, product.price, product.image, 1, product.units));
+   
+    (document.getElementById("product"+product.id?.toString()) as HTMLElement).style.backgroundColor="green";
   }
 
 }

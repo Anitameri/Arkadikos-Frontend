@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{ProductService} from '../../../services/product.service';
 import { Product } from 'app/interface/product';
 import { order } from 'app/interface/oder';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-productdetail',
@@ -11,7 +12,7 @@ import { order } from 'app/interface/oder';
 export class ProductdetailComponent implements OnInit {
   products:Product[]=[];
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private router:Router) { }
 
   ngOnInit(): void {
     this.productService.getProductsList().subscribe((products)=>(this.products=products));
@@ -23,5 +24,9 @@ export class ProductdetailComponent implements OnInit {
     this.productService.orders.push(new order(product.id, product.name, product.price, product.image, 1, product.units));
    
     (document.getElementById("product"+product.id?.toString()) as HTMLElement).style.backgroundColor="green";
+  }
+  showOneProduct(product:Product): void {
+    this.productService.oneProduct=product;
+    this.router.navigate(['oneproduct']);
   }
 }
