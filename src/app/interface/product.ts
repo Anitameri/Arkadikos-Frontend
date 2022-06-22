@@ -1,5 +1,5 @@
 export class Product {
-    id : number|undefined;
+    id? : number;
     name:String |undefined;
     description: String|undefined ;
     price: number|undefined;
@@ -7,5 +7,6 @@ export class Product {
     image:String | undefined ;
     units:number| undefined;
     rating:number|undefined;
-    user_id:number|undefined;
+    user_id?:Number;
+
 }
