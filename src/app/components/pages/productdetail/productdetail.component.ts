@@ -4,6 +4,7 @@ import { Product } from 'app/interface/product';
 import { order } from 'app/interface/oder';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-productdetail',
   templateUrl: './productdetail.component.html',
