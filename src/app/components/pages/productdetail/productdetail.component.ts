@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{ProductService} from '../../../services/product.service';
 import { Product } from 'app/interface/product';
-import { order } from 'app/interface/oder';
+import { order } from 'app/interface/order';
 import { Router } from '@angular/router';
 
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { order } from 'app/interface/oder';
+import { order } from 'app/interface/order';
 import { Product } from 'app/interface/product';
 import { ProductService } from 'app/services/product.service';
 
