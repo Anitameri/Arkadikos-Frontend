@@ -35,4 +35,6 @@ export class ProductService {
   deleteProduct(id: number): Observable<Object>{
     return this.httpClient.delete(`${this.baseURL}/${id}`);
   }
+
+  oneProduct:Product= new Product();
 }
