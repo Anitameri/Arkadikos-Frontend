@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from "@angular/forms";
+import { Router } from '@angular/router';
 
 import { Product } from 'app/interface/product';
+import { ProductDto } from 'app/interface/ProductDto';
+import { AuthorizationService } from 'app/services/authorization.service';
 import { ProductService } from 'app/services/product.service';
 
 @Component({
@@ -25,32 +28,18 @@ export class ProductformComponent implements OnInit {
 
 
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private auth: AuthorizationService, private router: Router) { }
 
   ngOnInit(): void {
   }
-  onSaveProduct(form:NgForm){
-
-    const newProduct={
-     name:form.value.name,
-      description:form.value.description,
-     image:form.value.image,
-     price:form.value.price,
-     category:form.value.category,
-     units:form.value.units,
-     user_id:form.value.user_id,
-     rating:form.value.rating
-
-
-
+  onSaveProduct(form:NgForm)
+  {
+    if(this.auth.user_info.id)
+    {
+      let newProduct:ProductDto=new ProductDto(form.value.name, form.value.description, form.value.price, form.value.category, form.value.image, form.value.units, form.value.rating, this.auth.user_info.id);
+      this.productService.createProduct(newProduct).subscribe((product)=> {this.products.push(product)}).add(()=>{this.router.navigate([''])});
     }
-    this.productService.createProduct(newProduct).subscribe((product)=>(this.products.push(product)));
-
-
+    else
+      this.router.navigate(['login-register']);
   }
-
-
-
-  }
-
-
+}
