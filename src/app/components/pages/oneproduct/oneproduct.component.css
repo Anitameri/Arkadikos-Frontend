@@ -1,0 +1,121 @@
+.cardoneproduct{
+    border:none;
+    background-color: transparent;
+}
+#main-image{
+    border-radius: 15px;
+}
+
+
+.brand{font-size: 13px}
+
+.act-price{
+color:red;
+font-weight: 700}
+
+.dis-price{text-decoration: line-through}
+
+.about{font-size: 14px}
+
+.color{margin-bottom:10px}
+
+
+
+.btn-danger{
+background-color: #C70A80;
+width: 211px;
+height: 81px;
+}
+
+.btn-danger:hover{
+background-color: #911762;
+}
+
+.btn-danger:focus{box-shadow: none}
+
+.cart i{margin-right: 10px}
+
+.descriptionBox{
+background-color: white;
+border-radius: 15px;
+width: 1200px;
+height: 218px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #C70A80;
+    
+}
+
+.fa-long-arrow-left, .ml-1{
+    text-decoration: none;
+    color: #C70A80;
+}
+.about{
+    font-size: 20px;
+}
+.box2{
+    text-align: right;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.similarproducts{
+    display: flex;
+    justify-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    justify-content: space-around;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-position: bottom;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.9rem;
+    float: left;
+    height: 410px;
+
+}
+.card-img-top {
+
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+}
+
+.card-body{
+
+    max-height: 467px;
+}
+.card-title{
+    font-size: 2rem;
+
+
+}
+.card-text{
+    font-size: 1rem;
+    max-height: 24px;
+}
+.card-price{
+    font-size: 1.5rem;
+}
+
+.headersimilarproducts{
+color: #C70A80;
+text-align: center;
+font-size: 40px;
+}
+
+
