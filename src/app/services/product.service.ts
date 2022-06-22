@@ -15,6 +15,7 @@ export class ProductService {
   private ORDER_API = 'http://127.0.0.1:8080/api/order/';
   
   orders:order[]=[];
+  items:number=0;
 
   constructor(private httpClient: HttpClient, private service:AuthorizationService) { }
 

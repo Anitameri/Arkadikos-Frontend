@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProductService } from 'app/services/product.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +13,7 @@ export class NavbarComponent implements OnInit {
   constructor(private service:ProductService) { }
 
   ngOnInit(): void {
-    this.items = this.service.orders.length;
+    this.items = this.service.items;
   }
 
 }
