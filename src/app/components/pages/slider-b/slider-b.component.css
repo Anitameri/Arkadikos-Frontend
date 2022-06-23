@@ -4,6 +4,7 @@
     margin-top: 30px;
     padding-left: 122px;
     padding-right: 122px;
+    opacity: 0.8888;
 }
 .tales {
     width: 100%;
@@ -13,12 +14,21 @@
   }
 
 h5 {
-    color: rgb(51, 14, 187);
+    color: rgb(213, 200, 26);
     font-size: 40px;
   }
+
+  .carousel-caption{
+    background-color: rgb(168, 30, 202, 0.7);
+    border-radius: 18.5px;
+    width: 55%;
+    margin: auto;
+  }
+  
   .descripcionslider{
-    color: rgb(51, 14, 187);
+    color:rgb(213, 200, 26);
     font-size: 30px;
+    opacity:unset;
   }
 
 
