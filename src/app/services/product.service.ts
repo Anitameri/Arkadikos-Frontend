@@ -14,7 +14,7 @@ export class ProductService {
 
   private baseURL = "http://localhost:8080/api/products";
   private ORDER_API = 'http://127.0.0.1:8080/api/order/';
-  
+
   orders:order[]=[];
   itemUpdate:Subject<number> = new Subject();
 
@@ -40,7 +40,7 @@ export class ProductService {
     order_dtos.push(new order_dto(this.service.user_info.id, this.oneProduct.id, this.oneProduct.price, this.oneProduct.units));
     return this.httpClient.post(`${this.ORDER_API}payment`, order_dtos, {headers: this.service.setToken()});
   }
-  
+
   getProductsList(): Observable<Product[]>{
     return this.httpClient.get<Product[]>(`${this.baseURL}`);
   }
@@ -58,7 +58,7 @@ export class ProductService {
   }
 
   deleteProduct(id: number): Observable<Object>{
-    return this.httpClient.delete(`${this.baseURL}/${id}`);
+    return this.httpClient.get(`${this.baseURL}/delete/${id}`);
   }
 
   oneProduct:Product= new Product();

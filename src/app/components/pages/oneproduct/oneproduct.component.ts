@@ -56,12 +56,12 @@ export class OneproductComponent implements OnInit {
     user_id: 1}
 
   ];
- 
+
   constructor(private productservice:ProductService, private router:Router, private auth:AuthorizationService) { }
 
   ngOnInit(): void {
     this.product=this.productservice.oneProduct;
-   
+
   }
   addToCart(product:Product): void {
     if(product.id&&product.name&&product.price&&product.image&&product.units)
@@ -71,11 +71,22 @@ export class OneproductComponent implements OnInit {
   }
   payOrders():void
   {
-    
+
     if(this.auth.isLogged())
       this.productservice.payOneProduct().subscribe((value) => console.log(value ?  "pago completado" : "pago cancelado"));
     else
       this.router.navigate(['login-register']);
   }
+
+  delete(){
+    if(this.productservice.oneProduct.id)
+    this.productservice.deleteProduct(this.productservice.oneProduct.id).subscribe().add(()=>{this.router.navigate([''])});
+
+  }
+
+
+
+
+
 
 }
