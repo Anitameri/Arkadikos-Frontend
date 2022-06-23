@@ -32,6 +32,7 @@
     min-height: 270px;
     border-top-left-radius: 0.9rem;
     border-top-right-radius: 0.9rem;
+    cursor: pointer;
 }
 
 
