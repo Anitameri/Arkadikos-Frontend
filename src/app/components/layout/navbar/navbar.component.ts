@@ -10,10 +10,10 @@ import { Subscription } from 'rxjs';
 export class NavbarComponent implements OnInit {
   items:number=0;
 
-  constructor(private service:ProductService) { }
+  constructor(private service:ProductService) { this.service.itemUpdate.subscribe((value)=> {this.items = value}); }
 
-  ngOnInit(): void {
-    this.items = this.service.items;
+  ngOnInit(): void
+  {
   }
 
 }

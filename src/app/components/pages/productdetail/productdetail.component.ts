@@ -22,5 +22,6 @@ export class ProductdetailComponent implements OnInit {
     if(product.id&&product.name&&product.price&&product.image&&product.units)
       this.productService.orders.push(new order(product.id, product.name, product.price, product.image, 1, product.units));
     (document.getElementById("product"+product.id?.toString()) as HTMLElement).style.backgroundColor="green";
+    this.productService.updateItem();
   }
 }

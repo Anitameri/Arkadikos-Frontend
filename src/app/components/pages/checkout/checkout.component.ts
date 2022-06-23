@@ -17,8 +17,8 @@ export class CheckoutComponent implements OnInit {
   constructor(private service:ProductService, private auth:AuthorizationService, private router:Router) { }
 
   ngOnInit(): void {
+    this.service.updateItem();
     this.orders = this.service.orders;
-    this.service.items = this.orders.length;
     this.items = this.orders.length;
     for(let o of this.orders)
       if(o.totalPrice)
@@ -28,7 +28,7 @@ export class CheckoutComponent implements OnInit {
   deleteOrder(id:number):void
   {
     this.orders.splice(id, 1);
-    this.service.items = this.orders.length;
+    this.service.updateItem();
     this.items = this.orders.length;
     this.totalPrice = 0;
     for(let o of this.orders)
@@ -62,10 +62,10 @@ export class CheckoutComponent implements OnInit {
 
   completedPayment():String
   {
-    this.service.items = 0;
     this.items = 0;
     this.totalPrice = 0;
     this.orders.splice(0);
+    this.service.updateItem();
     return "pago completado";
   }
 }

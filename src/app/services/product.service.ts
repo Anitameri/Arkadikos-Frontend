@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http'
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Product } from '../interface/product';
 import { order } from 'app/interface/order';
 import { order_dto } from 'app/interface/order_dto';
@@ -15,9 +15,14 @@ export class ProductService {
   private ORDER_API = 'http://127.0.0.1:8080/api/order/';
   
   orders:order[]=[];
-  items:number=0;
+  itemUpdate:Subject<number> = new Subject();
 
   constructor(private httpClient: HttpClient, private service:AuthorizationService) { }
+
+  updateItem():void
+  {
+    this.itemUpdate.next(this.orders.length);
+  }
 
   payOrder(): Observable<Object>
   {
