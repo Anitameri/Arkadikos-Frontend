@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { order } from 'app/interface/order';
 import { Product } from 'app/interface/product';
+import { AuthorizationService } from 'app/services/authorization.service';
 import { ProductService } from 'app/services/product.service';
 
 @Component({
@@ -54,7 +56,8 @@ export class OneproductComponent implements OnInit {
     user_id: 1}
 
   ];
-  constructor(private productservice:ProductService) { }
+ 
+  constructor(private productservice:ProductService, private router:Router, private auth:AuthorizationService) { }
 
   ngOnInit(): void {
     this.product=this.productservice.oneProduct;
@@ -62,9 +65,17 @@ export class OneproductComponent implements OnInit {
   }
   addToCart(product:Product): void {
     if(product.id&&product.name&&product.price&&product.image&&product.units)
-    this.productservice.orders.push(new order(product.id, product.name, product.price, product.image, 1, product.units));
-   
+      this.productservice.orders.push(new order(product.id, product.name, product.price, product.image, 1, product.units));
     (document.getElementById("product"+product.id?.toString()) as HTMLElement).style.backgroundColor="green";
+    this.productservice.updateItem();
+  }
+  payOrders():void
+  {
+    
+    if(this.auth.isLogged())
+      this.productservice.payOneProduct().subscribe((value) => console.log(value ?  "pago completado" : "pago cancelado"));
+    else
+      this.router.navigate(['login-register']);
   }
 
 }

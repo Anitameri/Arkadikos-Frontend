@@ -33,6 +33,13 @@ export class ProductService {
         order_dtos.push(new order_dto(this.service.user_info.id, o.id, o.totalPrice, o.units));
     return this.httpClient.post(`${this.ORDER_API}payment`, order_dtos, {headers: this.service.setToken()});
   }
+
+  payOneProduct() : Observable<Object>{
+    let order_dtos:order_dto[]=[];
+    if(this.service.user_info.id && this.oneProduct.id && this.oneProduct.price && this.oneProduct.units)
+    order_dtos.push(new order_dto(this.service.user_info.id, this.oneProduct.id, this.oneProduct.price, this.oneProduct.units));
+    return this.httpClient.post(`${this.ORDER_API}payment`, order_dtos, {headers: this.service.setToken()});
+  }
   
   getProductsList(): Observable<Product[]>{
     return this.httpClient.get<Product[]>(`${this.baseURL}`);
@@ -55,4 +62,7 @@ export class ProductService {
   }
 
   oneProduct:Product= new Product();
+
+
+
 }
