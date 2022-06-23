@@ -1,0 +1,74 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="cardoneproduct">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="images p-3">
+                            <div class="text-center p-4"> <img id="main-image" src={{product.image}} width="600"/> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 box1">
+                        <div class="product p-4 box2">
+                            <!-- <div class="arrowback">
+                                <i class="fa fa-long-arrow-left fa-2xl"></i> <span class="ml-1">Back</span>
+                            </div> -->
+                            <div class="cart mt-4 align-items-center btnaddcart"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button></div>
+                            <!-- <div class="iconcart"><a class="nav-link carrito"><i class="fa-solid fa-cart-shopping fa-2xl iconocarrito"></i></a></div> -->
+                            <div class="cart mt-4 align-items-center btnaddcart"> <button class="btn btn-danger text-uppercase mr-2 px-4">Comprar ya</button></div>
+                        </div>
+                    </div>
+                    <div class="descriptionBox"> 
+                      <p class="about">{{product.name}}</p>
+                      <p class="about">{{product.description}}</p>
+                      <p class="about">{{product.price}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="headersimilarproducts">Productos Destacados</h2>
+
+<div class="containersimilarproducts">
+<div class="similarproducts" *ngFor= "let product of products">
+    <div class="card">
+      <img src={{product.image}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hola</h5>
+        <p class="card-text">Aqui va la descripcion completa</p>
+        <p class="card-price">100€</p>
+        <!-- <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a> -->
+      </div>
+    </div>
+    <!-- <div class="card">
+        <img src="assets/images/gameboy.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hola</h5>
+          <p class="card-text">Aqui va la descripcion completa</p>
+          <p class="card-price">100€</p>
+          <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/gameboy.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hola</h5>
+          <p class="card-text">Aqui va la descripcion completa</p>
+          <p class="card-price">100€</p>
+          <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/gameboy.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hola</h5>
+          <p class="card-text">Aqui va la descripcion completa</p>
+          <p class="card-price">100€</p>
+          <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a>
+        </div>
+      </div> -->
+</div>
+</div>

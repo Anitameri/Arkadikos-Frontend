@@ -8,4 +8,5 @@ export class Product {
     units:number| undefined;
     rating:number|undefined;
     user_id:number|undefined;
+
 }

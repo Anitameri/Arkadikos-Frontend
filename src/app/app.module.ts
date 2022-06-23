@@ -24,6 +24,7 @@ import { CheckoutComponent } from './components/pages/checkout/checkout.componen
 import { FormPlusImageComponent } from './components/pages/form-plus-image/form-plus-image.component';
 import { SliderBComponent } from './components/pages/slider-b/slider-b.component';
 import { LoginregisterComponent } from './components/pages/loginregister/loginregister.component';
+import { OneproductComponent } from './components/pages/oneproduct/oneproduct.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { LoginregisterComponent } from './components/pages/loginregister/loginre
     ProductdetailComponent,
     CheckoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    OneproductComponent
   ],
   imports: [
      BrowserModule,

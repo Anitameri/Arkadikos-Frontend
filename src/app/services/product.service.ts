@@ -5,6 +5,7 @@ import { Product } from '../interface/product';
 import { order } from 'app/interface/order';
 import { order_dto } from 'app/interface/order_dto';
 import { AuthorizationService } from './authorization.service';
+import { ProductDto } from 'app/interface/ProductDto';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +38,7 @@ export class ProductService {
     return this.httpClient.get<Product[]>(`${this.baseURL}`);
   }
 
-  createProduct(product: Product): Observable<Object>{
+  createProduct(product: ProductDto): Observable<Object>{
     return this.httpClient.post(`${this.baseURL}/create`, product);
   }
 
@@ -52,4 +53,6 @@ export class ProductService {
   deleteProduct(id: number): Observable<Object>{
     return this.httpClient.delete(`${this.baseURL}/${id}`);
   }
+
+  oneProduct:Product= new Product();
 }
