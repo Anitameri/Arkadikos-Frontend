@@ -56,7 +56,8 @@ a, a:hover, a:focus, a:active {
     font-size: 20px;
 }
 .box2{
-    text-align: right;
+    text-align: center;
+    margin-left: 200px;
 }
 .box1{
     display: flex;
