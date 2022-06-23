@@ -17,6 +17,12 @@
   src: url(./assets/fonts/PlayMeGames-Demo.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fascinate+Inline&display=swap');
+
+*{
+  font-family: 'Anton', sans-serif;
+}
+
 h1 {
   font-family: ARCADECLASSIC;
   color: #590696;

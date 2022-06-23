@@ -1,55 +1,58 @@
 <div class="product-form col-5">
-<form>
+<form  (submit)=" onSaveProduct(productForm)" #productForm="ngForm">
     <div class="mb-3">
       <label for="name" class="form-label">Nombre del producto</label>
-      <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+      <input type="text" class="form-control" id="name"  name="name" [ngModel]="product?.name" #name="ngModel" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text">El mejor sitio para vender tu retro-game.</div>
     </div>
     <div class="mb-3">
       <label for="description" class="form-label">Description</label>
-      <textarea type="text" class="form-control" id="description"></textarea>
+      <textarea type="text" class="form-control" id="description"  name="description" [ngModel]="product?.description" #description="ngModel"></textarea>
     </div>
     <div class="mb-3">
       <label for="price" class="form-label">Precio</label>
-      <input type="number" class="form-control" id="price" aria-describedby="emailHelp">
+      <input type="number" class="form-control" id="price"  name="price" [ngModel]="product?.price" #price="ngModel" aria-describedby="emailHelp">
     </div>
     <div class="mb-3">
       <label for="category" class="form-label">Categoria</label>
-      <input type="text" class="form-control" id="category">
+      <input type="text" class="form-control" id="category"  name="category" [ngModel]="product?.category" #category="ngModel">
     </div>
     <div class="mb-3">
       <label for="units" class="form-label">Unidades</label>
-      <input type="number" class="form-control" id="units">
+      <input type="number" class="form-control" id="units"  name="units" [ngModel]="product?.units" #units="ngModel">
     </div>
     <div class="mb-3">
       <label for="image" class="form-label">Imagen</label>
-      <input type="file" class="form-control" id="image">
+      <input type="text" class="form-control" id="image"  name="image" [ngModel]="product?.image" #image="ngModel">
     </div>
-    
-    <button type="submit" class="btn btn-primary"><i class="bi bi-cart"></i>Comprar</button>
+    <input type="hidden" class="form-control" id="user_id"  name="user_id" [ngModel]="product?.user_id" #user_id="ngModel" [value]=1>
+    <input type="hidden" class="form-control" id="rating"  name="rating" [ngModel]="product?.rating" #rating="ngModel" [value]= 2>
+
+    <button type="submit" class="btn btn-primary"><i class="bi bi-cart"></i>Crear</button>
   </form>
 </div>
 
-<!--   <form>
-    <div class="form-group">
-        <input type="file" (change)="onImageUpload($event)">
-        <input type="button" (click)="imageUploadAction()" value="Upload Image" class="btn1">
-    </div>
+<!--  <form *ngIf="showAddTodo||showEditTodo"  class="add-form withandcenter" (submit)=" onSaveTodo(todoForm)" #todoForm="ngForm">
+    <div class="form-control">
+        <label  for="text">Todo</label>
 
+            <input type="text" id="text" name="text" [ngModel]="todo?.text" class="form-control" placeholder="Add a Todo"#text="ngModel">
 
-    <div>
-        <output *ngIf=successResponse class="success"><b>{{successResponse}}</b></output>
-    </div>
-    <br>
+        </div>
+        <div class="form-control">
+        <label  for="day">Day</label>
 
-    <div class="form-group">
-        <input type="text" id="image" placeholder="Search Image" [(ngModel)]="image" name="image" />
-        <input type="button" (click)="viewImage()" value="View Image" class="btn1">
+            <input type="text" id="day" name="day" [ngModel]="todo?.day" class="form-control" placeholder="Add a Day"#title="ngModel">
 
     </div>
+    <div class="form-control form-control-check">
+        <label for="reminder">Reminder</label>
+            <div class="abs_totheleft">
+            <input type="checkbox" id="reminder" name="reminder" [ngModel]="todo?.reminder" class="cheeek" placeholder="Add a remember" #reminder="ngModel">
 
-    <div *ngIf=dbImage>
-        <img [src]="dbImage">
+        </div>
     </div>
+        <input type="submit"*ngIf="showAddTodo||showEditTodo" value="Save Todo"class="btn btn-block">
+
 
 </form> -->

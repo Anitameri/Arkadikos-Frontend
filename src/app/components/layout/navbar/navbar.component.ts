@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ProductService } from 'app/services/product.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  items:number=0;
 
-  constructor() { }
+  constructor(private service:ProductService) { this.service.itemUpdate.subscribe((value)=> {this.items = value}); }
 
-  ngOnInit(): void {
+  ngOnInit(): void
+  {
   }
 
 }
