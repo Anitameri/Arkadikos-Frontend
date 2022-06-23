@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+ .btn-pay {
+    font-family: PlayMeGames-Demo;
+	background: green;
+	border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+	border-left: 6px inset rgba(0, 0, 0, 0.5);
+	border-right: 6px inset rgba(255, 255, 255, 0.5);
+	border-top: 6px inset rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	min-width: 200px;
+	text-transform: uppercase;
+	width: auto;
+
+}
+.btn-pay:focus{
+    background: rgb(18, 92, 18);
+}
+.btn-pay:hover {
+    background: rgb(18, 92, 18);
+}
+
+.btn-delete {
+    font-family: PlayMeGames-Demo;
+	background: red;
+	border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+	border-left: 6px inset rgba(0, 0, 0, 0.5);
+	border-right: 6px inset rgba(255, 255, 255, 0.5);
+	border-top: 6px inset rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	min-width: 200px;
+	text-transform: uppercase;
+	width: auto;
+
+}
+.btn-delete:focus{
+    background: rgb(129, 30, 30);
+}
+.btn-delete:hover {
+    background: rgb(129, 30, 30);
+}
+.btn-trash{
+    background: red;
+    border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+	border-left: 6px inset rgba(0, 0, 0, 0.5);
+	border-right: 6px inset rgba(255, 255, 255, 0.5);
+	border-top: 6px inset rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+
+	text-transform: uppercase;
+	width: auto;
+}
+.btn-trash:focus{
+    background: rgb(129, 30, 30);
+}
+.btn-trash:hover {
+    background: rgb(129, 30, 30);
+}
