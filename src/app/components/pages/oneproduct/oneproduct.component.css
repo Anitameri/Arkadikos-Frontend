@@ -149,7 +149,81 @@ font-size: 40px;
     background: #a1196d;
 }
 .btnaddcart{
-    padding: 3.5rem;
+    padding: 1.5rem;
 }
+.btn-delete {
+    font-family: PlayMeGames-Demo;
+	background: #ff0909;
+	border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+	border-left: 6px inset rgba(0, 0, 0, 0.5);
+	border-right: 6px inset rgba(255, 255, 255, 0.5);
+	border-top: 6px inset rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2rem;
+	
+	min-width: 200px;
 
+	text-transform: uppercase;
+	width: auto;
+
+}
+.btn-delete:focus{
+    background: #a31f1f;
+}
+.btn-delete:hover {
+    background: #a31f1f;
+}
+.btn-buy {
+    font-family: PlayMeGames-Demo;
+	background: green;
+	border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+	border-left: 6px inset rgba(0, 0, 0, 0.5);
+	border-right: 6px inset rgba(255, 255, 255, 0.5);
+	border-top: 6px inset rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2rem;
+	
+	min-width: 200px;
+
+	text-transform: uppercase;
+	width: auto;
+
+}
+.btn-buy:focus{
+    background: rgb(25, 99, 25);
+}
+.btn-buy:hover {
+    background: rgb(25, 99, 25);
+}
+.btn-add {
+    font-family: PlayMeGames-Demo;
+	background: #C70A80;
+	border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+	border-left: 6px inset rgba(0, 0, 0, 0.5);
+	border-right: 6px inset rgba(255, 255, 255, 0.5);
+	border-top: 6px inset rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2rem;
+	
+	min-width: 200px;
+
+	text-transform: uppercase;
+	width: auto;
+
+}
+.btn-add:focus{
+    background: #a1196d;
+}
+.btn-add:hover {
+    background: #a1196d;
+}
 
