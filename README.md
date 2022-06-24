@@ -67,11 +67,11 @@ Cuando unamos el frontend con el backend tenemos que tener abierto tanto el inte
  Aqui tenemos el git hub del repositorio del backend: https://github.com/Anitameri/Arkadikos-backend.git.
  
  ## Autores ✒️
- Jesus Otero - Desarrollador Fullstakc - https://github.com/jesusod.
- David Flaquer - Desarrollador Fullstack - https://github.com/Dfcc.
- Martí Puig - Desarrollador Frontend - https://github.com/Choephel108.
- Samuel Alonso - Desarrollador Fullstack - https://github.com/UndefinedBehaviourAndIllFormed.
- Ana Maria Adalid - Desarrollador Fullstack - https://github.com/Anitameri.
+ - Jesus Otero - Desarrollador Fullstakc - https://github.com/jesusod.
+ - David Flaquer - Desarrollador Fullstack - https://github.com/Dfcc.
+ - Martí Puig - Desarrollador Frontend - https://github.com/Choephel108.
+ - Samuel Alonso - Desarrollador Fullstack - https://github.com/UndefinedBehaviourAndIllFormed.
+ - Ana Maria Adalid - Desarrollador Fullstack - https://github.com/Anitameri.
 
  ## Expresiones de Gratitud 🎁
  - Comenta a otros sobre este proyecto 📢
