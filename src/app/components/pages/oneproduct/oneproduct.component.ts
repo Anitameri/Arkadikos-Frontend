@@ -25,7 +25,7 @@ export class OneproductComponent implements OnInit {
     rating: 4,
     user_id: 1},
 
-    {name: "Sudadera Arkadikos",
+    {name: "Sudadera Hombre Arkadikos",
     id:2,
     image:"assets/images/Group 2.png",
     price: 100,
@@ -45,12 +45,12 @@ export class OneproductComponent implements OnInit {
     rating: 4,
     user_id: 1},
 
-    {name: "Taza Cafe Arkadikos",
+    {name: "Sudadera Mujer Arkadikos",
     id:3,
     image:"assets/images/Group 4.png",
     price: 100,
     category: "merchan",
-    description: "¿Piensas Retro desde el desayuno? Esta es tu taza!",
+    description: "Abrigate del frío y luce el logo de tu Comunidad",
     units: 1,
     rating: 4,
     user_id: 1}

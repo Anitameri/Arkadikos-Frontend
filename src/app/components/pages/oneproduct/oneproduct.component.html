@@ -34,42 +34,16 @@
 <h2 class="headersimilarproducts">Productos Destacados</h2>
 
 <div class="containersimilarproducts">
-<div class="similarproducts" *ngFor= "let product of products">
+  <div class="similarproducts" *ngFor= "let product of products">
     <div class="card">
       <img src={{product.image}} class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Hola</h5>
-        <p class="card-text">Aqui va la descripcion completa</p>
-        <p class="card-price">100€</p>
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <p class="card-price">{{product.price}}</p>
         <!-- <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a> -->
       </div>
     </div>
-    <!-- <div class="card">
-        <img src="assets/images/gameboy.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Hola</h5>
-          <p class="card-text">Aqui va la descripcion completa</p>
-          <p class="card-price">100€</p>
-          <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/images/gameboy.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Hola</h5>
-          <p class="card-text">Aqui va la descripcion completa</p>
-          <p class="card-price">100€</p>
-          <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/images/gameboy.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Hola</h5>
-          <p class="card-text">Aqui va la descripcion completa</p>
-          <p class="card-price">100€</p>
-          <a (click)="addToCart(product)" id="product{{product.id}}" class="btn cart px-auto">ADD TO CART</a>
-        </div>
-      </div> -->
-</div>
+    
+  </div>
 </div>
